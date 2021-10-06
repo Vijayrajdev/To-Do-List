@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Assets/css/style.css" />
+    <title>To-Do-app</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <div class="container">
+          <h1>Todo List</h1>
+          <div class="toggle-switch">
+            <label>
+              <input class="checkbox" type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="input-items">
+          <input
+            class="input-text"
+            type="text"
+            placeholder="Add your task here..."
+          />
+          <ion-icon class="add-button" name="add-outline"></ion-icon>
+        </div>
+        <div class="task-container">
+          <div class="task-header">
+            <p><span>0</span> items</p>
+            <ul class="list-items">
+              <p><a href="#">All</a></p>
+              <p><a href="#">Pending</a></p>
+              <p><a href="#">Completed</a></p>
+            </ul>
+            <p class="clear">Clear</p>
+          </div>
+          <div class="tasks">
+            <ul class="task-list-container">
+              <!-- <li>
+                <div class="checkmark-container">
+                  <input class="checkmark" type="checkbox" unchecked />
+                  <span class="checkmark"></span>
+                </div>
+                Go to Gym -->
+              </li>
+            </ul>
+          </div>
+        </div>  
+      </section>
+    </main>
+    <footer>
+      <div class="footer-el">
+        <p>
+          <a href="#"> © Copyright 2021 | To-Do List</a>
+        </p>
+      </div>
+      <div>
+        <ion-icon class="footer-icons" name="logo-github"></ion-icon>
+        <ion-icon class="footer-icons" name="logo-instagram"></ion-icon>
+        <ion-icon class="footer-icons" name="logo-linkedin"></ion-icon>
+      </div>
+    </footer>
+    <!-- Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Javascript -->
+    <script src="/app.js"></script>
+  </body>
+</html>
