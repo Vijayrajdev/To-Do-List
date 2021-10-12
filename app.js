@@ -1,23 +1,26 @@
-const taskInput = document.querySelector('.input-text');
 const addButton = document.querySelector('.add-button');
-const taskListConatiner = document.querySelector('.task-list-container');
-
-
-const list = () => {
-    return (
-        `<div class="checkmark-container">
-                  <input class="checkmark" type="checkbox" unchecked />
-                  <span class="checkmark"></span>
-                </div>`
-    )
-};
+const deleteButton = document.querySelector('.delete-button');
+const taskInput = document.querySelector('.input-text');
+const taskArea = document.querySelector('.task-list-container');
 
 
 addButton.addEventListener('click', () => {
-    let inputValue = taskInput.value;
-    const element = document.createElement('li')
-    const textNode = document.createTextNode(inputValue)
-    element.appendChild(textNode)
-    taskListConatiner.appendChild(element)
+    let input = taskInput.value;
+    let template = `<div class="checkmark-container">
+                  <input class="checkmark" type="checkbox" unchecked />
+                  <span class="checkmark"></span>
+                </div>
+                <div class="content-container">
+                  <p>${input}</p>
+                  <ion-icon
+                    class="delete-button"
+                    name="close-outline"
+                  ></ion-icon>`
+    let element = document.createElement('li');
+    element.innerHTML = template;
+    taskArea.appendChild(element);
 })
 
+deleteButton.addEventListener('click', (e) => {
+    taskArea.removeChild
+})

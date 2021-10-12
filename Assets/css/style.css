@@ -179,7 +179,7 @@ ion-icon {
 
 .task-header {
   width: 410px;
-  height: 40px;
+  min-height: 40px;
   margin: 5px;
   display: flex;
   flex-direction: row;
@@ -244,6 +244,28 @@ li {
   color: #d8dbe0;
   font-size: 16px;
   font-weight: 500;
+}
+
+.content-container {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.content-container p {
+  color: aliceblue;
+}
+
+.delete-button {
+  position: absolute;
+  right: 0;
+  color: #dc143c;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+
+.tasks:hover .delete-button {
+  opacity: 1;
 }
 
 .checkmark {
