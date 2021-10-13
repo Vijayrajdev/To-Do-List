@@ -256,7 +256,7 @@ li {
   color: aliceblue;
 }
 
-.delete-button {
+.delete {
   position: absolute;
   right: 0;
   color: #dc143c;
@@ -264,7 +264,7 @@ li {
   transition: opacity 0.5s linear;
 }
 
-.tasks:hover .delete-button {
+.tasks:hover .delete {
   opacity: 1;
 }
 
